@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+main {
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+  text-transform: uppercase;
+  position: relative;
+  color: #fff;
+}
+main img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+main nav {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav .elements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+nav h3 {
+  font-size: 1.1vw;
+  font-weight: 600;
+}
+nav h3:hover {
+  font-size: 1.3vw;
+  font-weight: 500;
+  transition: all ease-out;
+  transition-duration: 0.2s;
+  border-bottom: 2px solid #f5f7f6;
+}
+nav button {
+  padding: 10px 15px;
+  font-size: 1.1vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.642);
+}
+nav button:hover {
+  padding: 11px 16px;
+  font-size: 1.2vw;
+  transition: all ease-out;
+  transition-duration: 0.2s;
+  background: transparent;
+}
+nav #lo {
+  width: 18px;
+  font-size: 1.2vw;
+}
+main .text {
+  height: 40%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  line-height: 1.1;
+}
+main h1 {
+  font-size: 130px;
+  font-weight: 700;
+  color: #fff;
+}
+.text span {
+  height: 5px;
+  width: 30px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+article {
+  height: 100%;
+  width: 100%;
+  background-color: #f5f7f6;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+article .article-text {
+  margin-top: 70px;
+  height: 100px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.article-text h1 {
+  font-size: 3.5vw;
+  font-weight: 500;
+}
+article .article-text hr {
+  height: 5px;
+  width: 80px;
+  margin-top: 10px;
+  background-color: #000;
+}
+.article-text hr:hover{
+    width: 200px;
+  transition: all ease-out;
+  transition-duration: 0.2s;
+  transition-delay: 1;
+}
+article .container {
+  height: 65%;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+}
+article .container .box {
+  height: 100%;
+  width: 30%;
+  box-shadow: rgb(21, 32, 43) 0px 20px 30px -10px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.container .box:hover {
+  height: 102%;
+  width: 31%;
+  transition: all ease-out;
+  transition-duration: 0.2s;
+  box-shadow: rgb(21, 32, 43) 0px 20px 30px -10px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.box img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.box .content {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.box .img {
+  object-fit: cover;
+  object-position: center;
+}
+.container hr {
+  height: 3px;
+  width: 45px;
+  margin-left: 43%;
+  background-color: #000;
+}
+/* .container .content hr:hover {
+  width: 100px;
+  margin-left: 40%;
+  transition: all ease-out;
+  transition-duration: 0.2s;
+  transition-delay: 1;
+} */
+.container p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.about {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* justify-content: space-between; */
+}
+.about .left {
+  height: 100%;
+  width: 50%;
+}
+.about .left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.about .right {
+  height: 100%;
+  width: 50%;
+}
+.right .heading {
+  margin-top: 100px;
+}
+.heading h1 {
+  font-size: 3.5vw;
+  font-weight: 500;
+}
+.heading hr {
+  height: 5px;
+  width: 90px;
+  margin-left: 45%;
+  margin-top: 5px;
+  background-color: #000;
+}
+.heading hr:hover {
+  width: 150px;
+  margin-left: 40%;
+  transition: all ease-out;
+  transition-duration: 0.2s;
+  transition-delay: 1;
+}
+.right .para {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+.para:hover {
+  font-size: 20px;
+  font-weight: 400;
+}
+.form{
+    height: 65%;
+    width: 100%;
+    background-color: #f5f7f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+.form h1{
+    font-size: 3.1vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.form h4{
+    font-size: 1.3vw;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.form input{
+    padding: 15px 70px;
+    border: none;
+    margin-top: 5px;
+}
+input:hover{
+  border: rgb(157, 156, 156);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+input::placeholder{
+font-size: 15px;
+color: rgb(157, 156, 156);
+}
+
+.form button{
+  padding: 5px 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+button:hover{
+padding: 5px 21px;
+  font-size: 18px;
+  font-weight: 500;
+   transition: all ease-out;
+  transition-duration: 0.2s;
+  transition-delay: 1;
+  background-color:rgb(255, 255, 255) ;
+}
+footer{
+  height: 45%;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .left i{
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+footer .left i:hover{
+  font-size: 30px;
+  font-weight: 600;
+   transition: all ease-out;
+  transition-duration: 0.3s;
+  transition-delay: 1;
+}
+footer .right{
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+}
+.right h3{
+  font-size: 15px;
+  font-weight: 500;
+}
+.right h3:hover{
+  font-size: 18px;
+  border-bottom: 2px solid #000;
+  transition: all ease-out;
+  transition-duration: 0.3s;
+  transition-delay: 1;
+}
