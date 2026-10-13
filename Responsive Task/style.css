@@ -2,15 +2,24 @@
   font-family: reckless;
   src: url(./FontFamily/RecklessCondensedS-TRIAL-Book.woff);
 }
+@font-face {
+  font-family: roboto-medium;
+  src: url(./FontFamily/RobotoMono-Medium.ttf);
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url(./FontFamily/RobotoMono-Regular.ttf);
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html,body{
-    width: 100%;
-    height: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
 main {
@@ -18,22 +27,36 @@ main {
   height: 100%;
   height: 100vh;
   background-color: #fbf9eb;
-  padding: 1vw;
-  position: relative;
+  /* padding: 1vw; */
+  /* position: relative; */
 }
-nav {
+
+main #line {
   width: 100%;
-  background-color: #fffefb;
+  padding: 0.3vw 0;
+  background-color: #2a2857;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: roboto-medium;
+    font-size: 0.9vw;
+    position: relative;
+}
+
+nav {
+  width: 95%;
+  /* background-color: #fffefb; */
+  background-color: aquamarine;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1vw 1.5vw;
   border-radius: 1vw;
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  
+  top: 7%;
+  left: 50%;
+transform: translateX(-50%);
+  /* z-index: 999; */
 }
 nav .nav-part1 {
   display: flex;
@@ -43,8 +66,8 @@ nav .nav-part1 {
   font-weight: 300;
   width: 33%;
 }
-nav .nav-part1 h3{
-    font-weight: 300;
+nav .nav-part1 h3 {
+  font-weight: 300;
 }
 nav .nav-part2 img {
   width: 100%;
@@ -52,27 +75,31 @@ nav .nav-part2 img {
 }
 nav .nav-part3 {
   display: flex;
-  width: 38%;
-  gap: 1vw;
+  /* width: 38%; */
+  gap: 2vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase;
   word-spacing: 0.2vw;
-   font-size: 0.6rem;
-  font-family: reckless;
+  font-size: 0.7rem;
+  font-family:roboto-medium;
+
 }
-nav .nav-part3 h3{
-    font-weight: 300;
+nav .nav-part3 h3 {
+  font-weight: 500;
 }
-nav .nav-part1 svg{
-    width: 2vw;
+nav .nav-part1 svg {
+  width: 2vw;
 }
 
-#section1{
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://www.twoleavestea.com/cdn/shop/files/matcha_pour_mobile.webp?v=1785857048&width=1125.0);
-    background-size:cover;
-    background-position: top;
+#section1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://www.twoleavestea.com/cdn/shop/files/matcha_pour_mobile.webp?v=1785857048&width=1125.0);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 85vh;
+  
 }
