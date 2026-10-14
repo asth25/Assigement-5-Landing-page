@@ -39,14 +39,13 @@ main #line {
   text-align: center;
   text-transform: uppercase;
   font-family: roboto-medium;
-    font-size: 0.9vw;
-    position: relative;
+  font-size: 0.9vw;
+  position: relative;
 }
 
 nav {
   width: 95%;
-  /* background-color: #fffefb; */
-  background-color: aquamarine;
+  background-color: #fffefb;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,7 +54,7 @@ nav {
   position: fixed;
   top: 7%;
   left: 50%;
-transform: translateX(-50%);
+  transform: translateX(-50%);
   /* z-index: 999; */
 }
 nav .nav-part1 {
@@ -83,8 +82,7 @@ nav .nav-part3 {
   text-transform: uppercase;
   word-spacing: 0.2vw;
   font-size: 0.7rem;
-  font-family:roboto-medium;
-
+  font-family: roboto-medium;
 }
 nav .nav-part3 h3 {
   font-weight: 500;
@@ -101,5 +99,4 @@ nav .nav-part1 svg {
   background-position: top;
   background-repeat: no-repeat;
   min-height: 85vh;
-  
 }
